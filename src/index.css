@@ -1,0 +1,69 @@
+/* !important because of bootstrap styles */
+
+@font-face {
+  font-family: Poppins-Regular!important;
+  src: url('./fonts/Poppins-Regular.ttf');
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #f4f4f4!important;
+  margin-left: auto!important;
+  margin-right: auto!important;
+  max-width: 1200px;
+  height: inherit;
+}
+
+a {
+  color: #c0c2c4!important;
+  text-decoration: none!important;
+}
+
+a:hover {
+  color: #a4a6a8!important;
+}
+
+.fullHeight {
+  height: 100%;
+}
+
+.navStyle {
+  height:100%;
+  width:250px;
+  display:inline-block!important;
+  top:0;
+  text-align:left;
+  font-size: 22px;
+}
+
+.navTitleStyle {
+  color: #ffffff;
+}
+
+.navElementStyle {
+  margin-left: 20%;
+}
+
+.logoStyle {
+  padding:0.1em 16px;
+  position:relative;
+  color: #ffffff;
+  font-size: 36px;
+  text-align: center;
+  border-bottom:1px solid #ffffff;
+}
+
+.headerStyle {
+  border-bottom:1px solid #343a40;
+}
+
+.mainContainerStyle {
+  display:inline-block;
+  width:100%;
+  max-width:950px;
+  text-align:center;
+  position:absolute;
+}
