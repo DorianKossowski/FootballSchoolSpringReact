@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 
+import api from '../helpers/Api.js';
 import GenericTable from './genericTable/GenericTable';
 
 class CoachesList extends Component {
@@ -10,7 +10,7 @@ class CoachesList extends Component {
     }
 
     componentDidMount() {
-        axios.get(`http://localhost:8080/admin/coaches-list`)
+        api.get('coaches-list')
         .then(response => response.data)
         .then(data => this.setState({coaches : data}))
         .catch(e => console.log('Get error: ', e));
@@ -23,7 +23,7 @@ class CoachesList extends Component {
             );
         }
         return ( 
-            <GenericTable header={['Mail', 'Name', 'Manager', 'Status']} rows={this.state.coaches}/>
+            <GenericTable header={['Mail', 'Name', 'Manager', 'Status']} rows={this.state.coaches} link={'/edit/'}/>
         );
     }
 
